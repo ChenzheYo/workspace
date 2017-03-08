@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="//Microsoft.WinJS.2.0/css/ui-light.css" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    
+    <link href="../videoJs/css/video-js.min.css" rel="stylesheet">
+    <script src="../videoJs/js/video.min.js"></script>
+    <script src="../js/todo.js"></script>
+</head>
+<body>
+    <div data-win-control="SdkSample.ScenarioInput">
+        <p>Use Windows.Media.Capture.CameraCaptureUI API to capture a video from a webcam.</p>
+        <button id="captureButton" onclick="captureVideo()">Capture Video</button>
+        <button id="pickButton" onclick="pickVideo1()">Pick Video</button>
+        <button id="resetButton" onclick="reset()" style="visibility:hidden">Reset</button>
+        <br/><br/>
+    </div>
+    <div id="debugmsg">sssss</div>
+    <video id="capturedVideo" autoplay="autoplay" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+           data-setup="{}" src="file:///C:/oceans.mp4">
+    </video>
+</body>
+</html>

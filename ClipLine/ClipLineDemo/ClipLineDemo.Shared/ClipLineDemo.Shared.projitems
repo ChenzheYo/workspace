@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>27271818-102d-423d-8fda-0eb7c92ae458</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ClipLineDemo</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)WebviewPage.xaml.cs">
+      <DependentUpon>WebviewPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)WebviewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)css\login.css" />
+    <Content Include="$(MSBuildThisFileDirectory)html\login.html" />
+    <Content Include="$(MSBuildThisFileDirectory)html\todo.html" />
+    <Content Include="$(MSBuildThisFileDirectory)videoJs\css\video-js.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)js\jquery-3.1.1.min.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\login.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\todo.js" />
+    <Content Include="$(MSBuildThisFileDirectory)videoJs\js\video.min.js" />
+  </ItemGroup>
+</Project>
